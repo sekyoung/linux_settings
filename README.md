@@ -6,6 +6,7 @@ Because I initialize workspace occasionally,I needed storage to back up some of 
  - texlive-full
  - vscode
  - oh-my-posh
+ - terminator
  - miniconda
  - Firacode Nerd Font
  - nvidia driver & cuda toolkit(GPU acceleration kits)
