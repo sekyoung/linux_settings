@@ -51,7 +51,7 @@ Because I initialize workspace occasionally,I needed storage to back up some of 
 1. install using command ```sudo apt install fail2ban```
 2. enable and start by ```sudo systemctl start fail2ban && sudo systemctl enable fail2ban```
 3. copy config file and edit paste one; by ```sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local```
-4. edit file by ```sudo gedit(nano) /etc/fail2ban/jail.local```. _conf should not be modified_. should be by .local file.
+4. edit file by ```sudo gedit(nano) /etc/fail2ban/jail.local```. _conf should not be modified_. should be by .local file. (but suggest to change increment ban time to yes..of course in .local file)
 5. Nothing is enough to be changed, but if there is, make sure to restart it by ```sudo systemtl restart fail2ban```
 6. followings are usefull command when using fail2ban
     - ```sudo systemctl status fail2ban```
@@ -63,7 +63,8 @@ Because I initialize workspace occasionally,I needed storage to back up some of 
  - ```tail -f /var/log/auth.log``` or ```journalctl -fu ssh``` for live log tracking.
  - ```journalctl -u ssh --since yesterday``` for log since yesterday
  - ```sudo systemctl status ssh``` check everything is green.
- -  
+ - ```journalctl -u ssh --grep="Accepted"``` to see only succeed login history.(```-fu``` for live logging)
+ - 
 
 
 ## oh my posh command
