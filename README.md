@@ -5,8 +5,8 @@ Because I initialize workspace occasionally,I needed storage to back up some of 
  - git
  - texlive-full
  - vscode
- - oh-my-posh
  - terminator
+ - oh-my-posh
  - miniconda
  - Firacode Nerd Font
  - nvidia driver & cuda toolkit(GPU acceleration kits)
@@ -52,7 +52,7 @@ Because I initialize workspace occasionally,I needed storage to back up some of 
 1. install using command ```sudo apt install fail2ban```
 2. enable and start by ```sudo systemctl start fail2ban && sudo systemctl enable fail2ban```
 3. copy config file and edit paste one; by ```sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local```
-4. edit file by ```sudo gedit(nano) /etc/fail2ban/jail.local```. _conf should not be modified_. should be by .local file. (but suggest to change increment ban time to yes..of course in .local file)
+4. edit file by ```sudo gedit(nano) /etc/fail2ban/jail.local```. _conf should not be modified_. should be by .local file. (but suggest to change increment ban time to yes;Of course in .local file)
 5. Nothing is enough to be changed, but if there is, make sure to restart it by ```sudo systemtl restart fail2ban```
 6. followings are usefull command when using fail2ban
     - ```sudo systemctl status fail2ban```
